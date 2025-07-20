@@ -4,6 +4,9 @@ import EditPage from './pages/EditPage'
 import Create from './pages/Create'
 import Single from './pages/Single'
 import Usestate from './pages/Usestate'
+import Blog from './pages/Blog'
+import CreateBlog from './pages/CreateBlog'
+import EditBlog from './pages/EditBlog'
 
 
 function App() {
@@ -17,8 +20,12 @@ function App() {
           <Route path='/' element={<Home />}/>
            <Route path='/create' element={<Create/>}/> 
            <Route path='/edit' element={<EditPage/>}/> 
-           <Route path='/single' element={<Single/>}/> 
+           <Route path='/env' element={<Single/>}/> 
+           <Route path='/blog/:id' element={<Blog/>} />
            <Route path='/usestate' element={<Usestate/>}/> 
+           <Route path='/create-blog' element={<CreateBlog/>}/>
+           <Route path='/edit-blog' element={<EditBlog/>}/>
+
            
         </Routes>
       </BrowserRouter>
