@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from '../Components/NavBar'
+import Navbar from '../components/Navbar'
 import axios from 'axios'
 const CreateBlog = () => {
   const [title, setTitle] = useState("")
