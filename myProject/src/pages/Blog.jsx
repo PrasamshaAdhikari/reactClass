@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios';
 import Navbar from '../Components/NavBar';
 
@@ -78,7 +78,9 @@ const Blog = () => {                        //Functional component
     <div>{blog.avatar}</div>
        <div >{blog.title}</div>
     <div>{blog.description}</div> 
-    <button onClick={deleteBlog} className='bg-blue-700 text-white hover:bg-blue-950'>Delete Me</button>
+    <Link to={"/edit-blog/"+blog.id}><button className='bg-blue-600 text-white hover:bg-blue-800'>Edit Me</button></Link>
+    <br/>
+    <button onClick={deleteBlog} className='bg-red-600 text-white hover:bg-red-800'>Delete Me</button>
     
      </>
 
