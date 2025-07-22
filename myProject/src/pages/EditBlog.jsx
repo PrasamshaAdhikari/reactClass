@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import Navbar from '../Components/NavBar'
+import Navbar from '../components/Navbar'
 import {  useNavigate, useParams } from 'react-router-dom'
 
   const EditBlog = () => {
